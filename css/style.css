@@ -409,11 +409,12 @@ padding: 5px;}
   opacity: 0.5;
 }
 .chat-message textarea{
+  width: 635px;
   resize:none;
   margin-right: 25px;
   padding: 10px;
   border: 1px solid #b689b2;
-  background: url(../img/ohter/smile.png)no-repeat 90% 20px;
+  background: url(../img/other/smile.png)no-repeat 98% 10px;
 }
 .load-mess{
   height: 35px;
@@ -422,7 +423,7 @@ padding: 5px;}
     margin-right: 10px;
     display: inline-block;
     position: relative;
-    left:30px;
+    left:15px;
 }
 .chat-message .load-item{margin-right: 20px;
       padding-top: 40px;
