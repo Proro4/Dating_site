@@ -23,6 +23,6 @@ $('.lang .lang-but').on('click',function(){
 	}setTimeout(chat,5000);
 	$('.chat-message a').on('click',function(){
 		var textMessage = $('.chat-message textarea').val();
-		$('.chat-mailing').append('<div class="chat-user right"><div class="chat-img right"><img src="img/photo/chat-img1.jpg" alt=""></div><div class="chat-text right arrow-right">'+textMessage+'</div><div class="chat-time left">14:33</div></div>')
+		$('.chat-mailing').append('<div class="chat-user right"><div class="chat-img right"><img src="img/photo/chat-img.jpg" alt=""></div><div class="chat-text right arrow-right">'+textMessage+'</div><div class="chat-time left">14:33</div></div>')
 	})
 })
