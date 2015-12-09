@@ -24,5 +24,15 @@ $('.lang .lang-but').on('click',function(){
 	$('.chat-message a').on('click',function(){
 		var textMessage = $('.chat-message textarea').val();
 		$('.chat-mailing').append('<div class="chat-user right"><div class="chat-img right"><img src="img/photo/chat-img.jpg" alt=""></div><div class="chat-text right arrow-right">'+textMessage+'</div><div class="chat-time left">14:33</div></div>')
+		$('.chat-message textarea').val(' ');
 	})
+	$('.chat-message textarea').keypress(function( event){
+		 if ( event.which == 13 ) {
+		var textMessage = $('.chat-message textarea').val();
+		$('.chat-mailing').append('<div class="chat-user right"><div class="chat-img right"><img src="img/photo/chat-img.jpg" alt=""></div><div class="chat-text right arrow-right">'+textMessage+'</div><div class="chat-time left">14:33</div></div>')
+		$('.chat-message textarea').val(' ');
+		}
+	})
+	
+
 })
