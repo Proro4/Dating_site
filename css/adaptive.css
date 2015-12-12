@@ -1,0 +1,51 @@
+@media screen and (max-width: 1010px){
+	.profile-chat {width: 550px;}
+	.profile-chat-title p{font-size: 15px;}
+	.contacts{width: 180px;}
+	.profile-block>span{top: -50px;}
+	.chat-message textarea{width: 435px;}
+	.about-us{width:295px;}
+	.footer-links{margin-left: 10px;}
+	.footer-links-title{font-size: 16px;}
+	.footer-links a{padding-left: 10px; font-size: 13px; margin-bottom: 1px;}
+	.chat-text{width: 390px;}
+}
+@media screen and (max-width: 768px){
+.profile-foto {width: 280px;}
+.profile-chat {width: 500px;}
+.profile-chat-title p  {font-size: 14px;margin-right: 10px;}
+.chat-message textarea { width: 400px;}
+.chat-mailing{height: 400px;}
+.chat{height: 540px;}
+.about-us{margin-left: 10px;}
+	.chat-text{width: 350px;}
+}
+@media screen and (max-width: 700px){
+.profile-chat {width: 400px; margin-left: 10px;}
+.profile-chat-title p {font-size: 12px;  margin-right: 3px;}
+.chat-message textarea { width: 310px;}
+	.chat-text{width: 250px;}
+}
+@media screen and (max-width: 610px){
+	.profile-block hr,.contacts{display: none;}
+	.profile-chat {  width: 96%; margin-left: 2%;}
+	.profile-foto { width: 380px;margin-left: 25px;}
+	.profile-block .profile-name{float: left; clear: both; width: 96%; margin-left: 2%;}
+	.profile-block table{float: left; width: 96%; margin-left: 2%;}
+	.footer-links{display: none;}
+	.copyricht p{font-size: 12px;}
+}
+@media screen and (max-width: 430px){
+	.profile-foto { width: 96%; margin-left: 2%; height: 300px;}
+	.header-menu a{ font-size: 12px; padding: 4px 4px;}
+	.chat-message textarea {width: 80%;}
+	.copyricht p {font-size: 10px;}
+}
+@media screen and (max-width: 430px){
+.chat-message .load-item{display: none;}
+	.chat-message textarea {width: 85%;}
+.chat-message a{width: 85%;}
+.profile-chat-title p {font-size: 10px;margin-right: 3px;}
+.profile-chat-title p span{font-size: 10px;    height: 17px;    width: 17px;}
+.profile-chat-title p:nth-child(2){display: none;}
+}

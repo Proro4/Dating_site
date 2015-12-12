@@ -15,7 +15,8 @@ body {
   font-family: 'Roboto-regular';
   line-height: 1;
   color: black;
-  background: white; }
+  background: white; 
+  overflow-x: hidden;}
 
 table {
   position: relative;
@@ -34,9 +35,9 @@ blockquote:before, blockquote:after, q:before, q:after {
 blockquote, q {
   quotes: "" ""; }
 .container{
-  width: 1000px;
+/*  width: 1000px;
   margin: 0 auto;
-}
+*/}
 
 .clearfix:before, .clearfix:after {
   content: "\0020";
@@ -57,22 +58,35 @@ blockquote, q {
   min-height: 670px;
 }
 .header-top{
-  background: url(../img/header-top-bck.png)no-repeat left;
+  background: url(../img/header-top-bck.png)no-repeat right;
   height: 50px;
+  display: inline-block;
+  width: 106%;
+  margin-top: 35px;
+  line-height: 50px;
+  color: white;
+  padding-left: 130px;
+  position: relative;
+  right: 130px;
 }
 .header-top>a{
   color: white;
+  /*line-height: 50px;*/
+  vertical-align: top;
+}
+.header-top>a:hover{
+  text-decoration: underline;
 }
 .lang {
-  position: relative;
+      margin: 16px 0 0 25px;
+  line-height: normal;
+  position: absolute;
             overflow: hidden;
     height: 17px;
-        margin-top: 50px;
-        margin-right: 10px;
         width: 30px;
         padding-right: 15px;
         cursor: pointer;
-        float: right;
+        display: inline-block;
         background: url(../img/other/arrow-bottom.png) no-repeat right 7px; }
         .lang-but{left: 0;
     position: absolute;
@@ -80,6 +94,7 @@ blockquote, q {
     height: 100%;
     width: 100%;}
          .lang .lang-select {
+          color: white;
           text-transform: uppercase;
           font-size: 14px;
           font-family:Arial;
@@ -92,6 +107,23 @@ blockquote, q {
   height: 180px;
   background: url(../img/header-mini-bck.jpg) center bottom;
 
+}
+.logo{
+  text-align: center;
+  margin-top: 200px;
+}
+.logo p{
+  font-size: 24px;
+  color: white;
+  text-align: right;
+  font-family: 'calibri';
+  opacity: .8;
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  position: relative;
+  bottom: 25px;
+  margin-bottom: 15px;
 }
 .logo-mini{
    margin-bottom: 10px;
@@ -165,9 +197,10 @@ blockquote, q {
   width: 385px;
   height: 385px;
   margin-right: 25px;
+  overflow: hidden;
+
 }
 .profile-foto img{
-  height: 100%;
   width: 100%;
 }
 .profile-block .profile-name{
@@ -175,8 +208,7 @@ blockquote, q {
   font-size: 24px;
   font-weight: bold;
   position: relative;
-  bottom: 10px;
-  padding-bottom: 20px;
+  bottom: 17px;
 }
 .profile-block .profile-name span{
   font-weight: normal;
@@ -189,18 +221,20 @@ blockquote, q {
   color: #815e98;
   width: 180px;
   text-align: left;
-  padding-bottom:10px;
+  padding-bottom:8px;
     vertical-align: top;
+    padding-top: 8px;
 }
 .profile-block table td:last-child{
   color: black;
     vertical-align: top;
     width: 405px;
+    padding-top: 8px;
 }
 .profile-block hr{
   border-top:1px solid #a187a5;
-  margin-bottom: 29px;
-  margin-top: 20px;
+  margin-bottom: 16px;
+  margin-top: 8px;
 }
 .profile-line{
 height: 4px;
@@ -234,17 +268,19 @@ position: relative;
 .profile-block table td.line-prof.n20 .profile-line:after{
   width: 20%;
 }
+.profile-block table td.line-prof.n35 .profile-line:after{
+  width: 35%;
+}
 .profile-block table td.line-prof.n65 .profile-line:after{
   width: 65%;
 }
 .profile-block table td.line-prof.n20 p{
-  position: absolute;
-  top: -5px;
   left:20%;
 }
+.profile-block table td.line-prof.n35 p{
+  left:35%;
+}
 .profile-block table td.line-prof.n65 p{
-  position: absolute;
-  top: -5px;
   left:65%;
 }
 .profile-but{
@@ -265,7 +301,7 @@ position: relative;
 .right{float: right;}
 .profile-block>span{
   position: absolute;
-  top:0;
+  top:-15px;
   right: 0;
   font-size: 18px;
   text-transform: uppercase;
@@ -408,13 +444,37 @@ padding: 5px;}
   padding: 10px;
   opacity: 0.5;
 }
+.chat-message{
+  position: relative;
+}
 .chat-message textarea{
   width: 635px;
   resize:none;
   margin-right: 25px;
   padding: 10px;
   border: 1px solid #b689b2;
-  background: url(../img/other/smile.png)no-repeat 98% 10px;
+  /*background: url(../img/other/smile.png)no-repeat 98% 10px;*/
+}
+.smile-block{
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  cursor: pointer;
+}
+.smiles{
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  background: #f0f0f0;
+  border:1px solid #d9dfe5;
+  right: 25px;
+  bottom: 100%;
+  border-radius: 3px;
+  display: none;
+}
+.smiles img{
+  padding: 15px 10px;
+  cursor: pointer;
 }
 .load-mess{
   height: 35px;
@@ -432,6 +492,10 @@ padding: 5px;}
     border: 0;
     overflow: hidden;
     background: url(../img/other/attach.png)no-repeat;
+    cursor: pointer;
+}
+.chat-message .load-item:hover{
+    background: url(../img/other/attach-h.png)no-repeat;
 }
 .chat-message a{    font-family: 'Roboto-regular';
     text-transform: uppercase;
@@ -446,7 +510,20 @@ padding: 5px;}
     font-size: 14px;
     font-weight: bold;
     margin-right: 25px;
-    cursor: pointer;}
+    margin-bottom: 20px;
+    border:1px solid transparent;
+    cursor: pointer;
+    transition:.2s all;}
+.chat-message a:hover{
+    background: white;
+    color: #0d4a76;
+    border:1px solid #0d4a76;
+}
+.chat-message a:active{
+    line-height: 32px;
+
+}
+
     .contacts{
       width: 240px;
       text-align: center;
@@ -486,14 +563,19 @@ padding: 5px;}
       margin: 0 auto;
       border-top: 1px solid #bacddc;
     }
+    .contacts-profile:hover{
+      background: #DCD0D0;
+    }
     .contacts-profile-img{
       margin: 10px 5px;
       height: 60px;
       width: 60px;
+      overflow: hidden;
     }
     .contacts-profile-img img{
-      height: 100%;
+      /*height: 100%;*/
       width: 100%;
+      float: right;
     }
     .contacts-profile-name{
       font-size: 14px;
@@ -527,7 +609,18 @@ padding: 5px;}
       text-align: center;
       line-height: 30px;
       text-transform: uppercase;
+    border:1px solid transparent;
+    transition:0.3s all;
     }
+.contacts-all a:hover{
+    background: white;
+    color: #0d4a76;
+    border:1px solid #0d4a76;
+}
+.contacts-all a:active{
+    line-height: 32px;
+
+}
     .footer{
       position: relative;
       height: 400px;
@@ -592,4 +685,263 @@ padding: 5px;}
 }
 .copyricht p a{
   color: #9c2881;
+}
+.search-filter{
+  width: 300px;
+  border: 1px solid #e8dbe4;
+}
+.search-filter-title{
+  color: white;
+  background: url(../img/search-bck.png);
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.search-filter-block{
+  color: #6d6d6d;
+  border: 1px solid #e6d7e1;
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 5px;
+  background: url(../img/other/arrow-filter.png)no-repeat 95% 10px;
+  cursor: pointer;
+}
+.search-filter-block span{
+  margin-right: 15px;
+}
+.search-filter-block input{
+  width: 40px;
+    margin-top: 15px;
+  border: 1px solid #e8dbe4;
+}
+.choice-filter{
+  text-align: center;
+  overflow: hidden;
+  height: 0;
+}
+.choice-filter p{
+  margin: 5px;
+  text-align: left;
+  border-top: 1px solid #e8dbe4;
+}
+
+.choice-filter p:hover{
+  background: rgba(232,219,228,0.3);
+}
+.search-filter>input{
+  border: 1px solid transparent;
+  color: white;
+  background: #0d4b77;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  line-height: 25px;
+  width:90%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  transition:.3s all;
+  margin-bottom: 10px;
+}
+.search-filter>input:hover{
+  color: #0d4b77;
+  border: 1px solid #0d4b77;
+  background: transparent;
+}
+.search-filter>input:active{
+  line-height: 23px;
+}
+.profile-main{
+  width: 660px;
+}
+.profile-main-block{
+  width: 150px;
+  margin-right: 20px;
+  float: left;
+  border: 1px solid #a5c9e4;
+  box-shadow: 0px 1px 3px #a5c9e4;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: black;
+}
+.profile-main-block:hover{
+  background: rgba(232,219,228,0.6);
+  border: 1px solid transparent;
+
+}
+.profile-main-block:nth-child(4n){
+margin-right: 0;}
+.profile-main-block-img{
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+.profile-main-block-img img{
+  width: 100%;
+
+}
+.profile-main-block p{
+  font-weight: bold;
+  padding: 5px;
+  font-size: 14px;
+}
+.profile-main-block span{
+  font-size: 14px;
+  opacity: 0.8;
+  padding: 5px;
+}
+.pagination {
+  text-align: right;  
+}
+.pagination li{
+  vertical-align: top;
+  display: inline-block;
+}
+.pagination a{
+  color:  #5285a7;
+  display: inline-block;
+  border: 1px solid #accde2;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  transition:.1s all;
+}
+.pagination a:hover{
+  border: 1px solid #195482;
+  background:#195482;
+  color: white;
+}
+.pagination li:first-child a{
+  background: url(../img/other/arrow-left.png)no-repeat center;
+}
+.pagination li:first-child a:hover{
+  background: url(../img/other/arrow-left-h.png)no-repeat center,#195482;
+  border: 1px solid #195482;
+}
+.pagination li:last-child a{
+  background: url(../img/other/arrow-right.png)no-repeat center;
+}
+.pagination li:last-child a:hover{
+  background: url(../img/other/arrow-right-h.png)no-repeat center,#195482;
+  border: 1px solid #195482;
+}
+.big-filter{
+  width: 100%;
+  min-height:140px;
+  background: #f9f9f9;
+  border: 1px solid #e9e0e6; 
+  margin-bottom: 30px;
+}
+.big-filter-title{
+  width: 100%;
+  background: #7d3e78;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 25px;
+  font-family: 'RobotoCondensed-Regular';
+  color: white;
+  text-transform: uppercase;
+  font-size:20px;
+}
+.big-filter .search-filter-block{
+  width: 230px;
+  display: inline-block;
+  background: url(../img/other/arrow-filter.png)no-repeat 95% 10px,white; 
+  margin-left: 10px;
+  position: relative;
+}
+.big-filter  .choice-filter{
+    width: 230px;
+    background: white;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    top:35px;
+ }
+ .choice-filter-h{
+    max-height: 210px;
+    min-height: 100px;
+    overflow-y: auto;
+}
+.big-filter input[type='submit']{
+  color: white;
+  height: 30px;
+  border: 1px solid #aadef6;
+  background: #0d4a76;
+  color: white;
+  width: 230px;
+  text-transform: uppercase;
+  line-height: 25px;
+  float: right;
+  margin-right: 27px;
+  transition:.2s all;
+}
+.big-filter input[type='submit']:hover{
+  border: 1px solid #0d4a76;
+  background: white;
+  color: #0d4a76;
+}
+.profiles-user-block {
+  margin-bottom: 30px;
+  border: 1px solid #a5c9e4;
+  width: 480px;
+}
+.profiles-user-block:nth-child(2n){
+  margin-left: 40px;
+}
+.profiles-user-img{
+  width: 198px;
+  float: left;
+}
+.profiles-user-block img{
+  width: 100%;
+  border: 1px solid #a5c9e4;
+}
+.profiles-user-block b{
+  display: inline-block;
+  font-weight: bold;
+  color: #815e99;
+  margin: 10px;
+  width: 260px;
+}
+.profiles-user-block p{
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 15px;
+}
+.profiles-user-block span{
+  font-size: 14px;
+  opacity: .7;
+  display: inline-block;
+  margin: 2px 0px 5px 30px;
+}
+.profiles-user-block a{
+  border: 1px solid transparent;
+  color: white;
+  background: url(../img/other/arrow-right-h.png)no-repeat 90% center, #0d4b77;
+  text-align: center;
+  width: 260px;
+  height: 30px;
+  line-height: 27px;
+  margin: 0 auto;
+  display: inline-block;
+  transition:.3s all;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  
+}
+.profiles-user-block a:hover{
+  border: 1px solid #0d4a76;
+  background: url(../img/other/arrow-right.png)no-repeat 90% center,white;
+  color:  #0d4a76;
+}
+.profiles-user-name{
+  height: 130px;
 }
