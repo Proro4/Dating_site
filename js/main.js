@@ -1,5 +1,31 @@
 $(document).ready(function(){
 
+	$('.enter-top').on('click',function(){
+		if($('.enter').css('top') == "-1000px"){
+			$('.enter').animate({'top':'0px'},500)
+		}
+		else{
+			$('.enter').animate({'top':'-1000px'},500)
+		}
+	})
+
+$('.enter-name').on('click',function(){
+	console.log($('.enter input[type="email"]').val())
+	var linkUser = $('.enter input[type="email"]').val();
+	if(linkUser == 'mail@mail.ua'){
+		$('.enter-name').attr('href','http://laroma.org/web/site/contact?43534653');
+	}
+	else if(linkUser == 'mail@mail.ru'){
+		$('.enter-name').attr('href','http://laroma.org/web/site/contact?29921593');
+	}
+		else{
+			$('.enter i').text('Данный e-mail, не зарегестрирован');
+		}
+	/*$('.enter-name').attr('href',linkUser);*/
+})
+
+
+
 
 $('.arrow-to-top').fadeOut();
 $('.lang .lang-but').on('click',function(){
@@ -76,4 +102,78 @@ $('.lang .lang-but').on('click',function(){
 		$(this).parent().parent().animate({'height':'0'},300);
 			$(this).parent().parent().parent().find('.search-filter-block-title').css('color','#6D6D71');
 	})
+
+	
+	function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.image').attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#imgInput").change(function(){
+    readURL(this);
+});
 })
+$(document).ready(function(){
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.image1').attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#imgInput1").change(function(){
+    readURL(this);
+});
+});
+$(document).ready(function(){
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.image2').attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#imgInput2").change(function(){
+    readURL(this);
+});
+});
+$(document).ready(function(){
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.image3').attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#imgInput3").change(function(){
+    readURL(this);
+});
+});
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.image4').attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#imgInput4").change(function(){
+    readURL(this);
+});

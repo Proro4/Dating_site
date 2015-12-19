@@ -945,3 +945,308 @@ margin-right: 0;}
 .profiles-user-name{
   height: 130px;
 }
+.enter{
+      top: -1000px;
+    position: absolute;
+    width: 600px;
+    height: 290px;
+    background: white;
+    /* display: none; */
+    left: 50%;
+    transform: translateX(-200px);
+}
+.enter-title {
+    width: 100%;
+    height: 40px;
+    background: #803e7b;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.enter label {
+    color: #aaaaaa;
+    width: 350px;
+    display: block;
+    text-align: center;
+    height: 50px;
+    margin-left: 85px;
+}
+.enter label p {
+    float: left;
+}
+.enter label input {
+    margin-top: 11px;
+    float: right;
+    height: 28px;
+    line-height: 1;
+    width: 270px;
+}
+.enter-name {
+    background: #0e4b78;
+    color: white;
+    display: block;
+    height: 40px;
+    width: 270px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.enter-help {
+    color: #a6a6a6;
+    font-size: 12px;
+    position: relative;
+    bottom: 15px;
+    left: 163px;
+}
+.enter-help.registr {
+    left: 270px;
+}
+.enter i {
+    font-size: 12px;
+    color: #aaaaaa;
+    position: relative;
+    top: 25px;
+}
+.register-page{
+  width: 640px;
+  display: block;
+  margin: 0 auto;
+text-align: center;
+border:1px solid #eae5e9;
+border-bottom:2px solid #eae5e9;
+background: #f4f4f4;
+}
+.register-title{height:40px;
+width: 100%;
+text-align: center;
+color: white;
+background: #7c3e77;
+line-height: 40px;
+font-size: 20px;
+text-transform: uppercase;}
+.profile-page {background:#f7f7f7;}
+.profile-page .enter-name, .register-page .enter-name{
+  text-transform: uppercase;
+}
+.profile-page  .search-filter-block,.register-page .search-filter-block{
+  background: white;
+}
+ .profile-page label,.register-page label {
+    color: #aaaaaa;
+    width: 400px;
+    display: block;
+    text-align: center;
+    min-height: 50px;
+    margin-left: 85px;
+}
+ .profile-page label p, .register-page label p {
+    float: left;
+        padding-top: 16px;
+}
+ .profile-page label input, .register-page label input {
+    margin-top: 11px;
+    float: right;
+    height: 28px;
+    line-height: 1;
+    width: 270px;
+}
+ .profile-page .search-filter-block,.register-page .search-filter-block{
+  width: 150px;
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+  }
+ .profile-page span,.register-page span{
+  float: left;    color: #aaaaaa;
+  padding-top: 15px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.regist-mail{
+  width: 400px;
+  display: block;
+  margin:  0 auto;
+}
+.regist-mail input{
+  float: left;
+ width: 40px;
+ margin-top: 10px;
+}
+ .profile-page ,.register-page .enter-name{
+  margin-bottom: 25px;
+}
+.btn.btn-primary.right{
+      border-radius: 0;
+    background: #1A5E87;
+    margin: 25px;
+}
+.profile-page {
+  width: 100%;
+}
+.profile-page .search-filter-block{
+      position: relative;
+      display: inline-block;
+  margin-left: 120px;
+}
+
+.profile-page .choice-filter{
+  position: absolute;
+  background: white;
+}
+.personal-info{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #815e99;
+  border-bottom: 1px solid #e5d5e0;
+  margin: 15px 0px;
+}
+.profile-page label{
+  margin-left: 150px;
+  color: #815e99;
+}
+.profile-page span{
+  color: #815e99;}
+.profile-page label.mini-input p{
+  margin:0 15px 0 40px;
+}
+.profile-page label.mini-input p:first-child{ margin-left: 0; margin-right: 75px;}
+.profile-page label.mini-input input{
+  float: left;
+width: 35px;}
+.profile-page .for-us textarea{
+  resize:none;
+  width: 270px;
+  height: 200px; 
+  float:right;
+}
+.for-us{
+  height: 200px;
+  width: 400px;
+  display: block;
+  margin-left:150px;
+}
+.for-us p{    color: #815e99;
+  float: left;  
+}
+.input-file-row-1:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.input-file-row-1{
+    display: inline-block;
+  margin-top: 25px;
+  position: relative;
+      border: 1px solid #e6d6e1;
+      margin-left: 10px;
+} 
+
+html[xmlns] .input-file-row-1{
+    display: block;
+}
+
+* html .input-file-row-1 {
+    height: 1%;
+}
+
+.upload-file-container { 
+  position: relative; 
+  width: 115px; 
+  height: 115px; 
+  overflow: hidden; 
+  background: url(../img/other/add-foto.png)  center no-repeat,white;
+  float: left;
+  margin-left: 23px;
+} 
+
+.upload-file-container:first-child { 
+  margin-left: 0;
+} 
+
+.upload-file-container > img {
+  width: 115px;
+  height: 115px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.upload-file-container-text{
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #719d2b;
+  line-height: 17px;
+  text-align: center;
+  display: block;
+  position: absolute; 
+  left: 0; 
+  bottom: 0; 
+  width: 115px; 
+  height: 115px;
+}
+
+
+.upload-file-container input  { 
+  position: absolute; 
+  left: 0; 
+  bottom: 0; 
+  font-size: 1px; 
+  opacity: 0;
+  filter: alpha(opacity=0); 
+  margin: 0; 
+  padding: 0; 
+  border: none; 
+  width: 115px; 
+  height: 115px; 
+  cursor: pointer;
+}
+.add-foto{
+  width:780px;
+  display: block;
+  margin-left: 150px;
+}
+.add-foto p{    color: #815e99;
+  float: left;  
+  margin-right: 75px;
+}
+.profile-page{
+  padding-bottom: 25px;
+}
+
+.profile-page .enter-name{
+  margin-top: 35px;
+}
+.profile-page .chekbox{
+  height: 150px;    padding-top: 35px;}
+.profile-page .chekbox p{
+  padding-top: 0; 
+}
+.profile-page .chekbox input{
+  height: 12px;
+  width: 12px;
+  float: left;
+  margin: 0;
+}
+.profile-page .chekbox span{
+  padding-top: 0;
+ margin-top: 0;
+  float: right;
+}
+.checkbox{
+  display: block;
+  width: 250px;
+  margin-left: 150px;
+}
