@@ -1,5 +1,28 @@
 $(document).ready(function(){
 
+	$('.contacts-profile').on('click',function(){
+		$('.photo-akk ').css({'top':'-35px'});
+		var imgFoto = $(this).find('img').attr('src');
+		$('.photo-akk img').attr('src',imgFoto);
+		$('.photo-akk ').animate({'top':'0'},500);
+		$('.contacts-profile').css('background','none');
+		$(this).css('background','#DCD0D0');
+	})
+
+	var bodyWidth = $('body').width();
+	var delWindow = $('.del-window').width();
+	var delLeftWidth = (bodyWidth / 2) - (delWindow /2);
+	$('.del-window').css('left',delLeftWidth);
+
+
+	$('.delete-akk').on('click',function(){
+		$('.lightbox').css('display','block');
+	})
+	$('.del-window .profile-but').on('click',function(){
+		$('.lightbox').css('display','none');
+	})
+
+
 	$('.enter-top').on('click',function(){
 		if($('.enter').css('top') == "-1000px"){
 			$('.enter').animate({'top':'0px'},500)

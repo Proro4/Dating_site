@@ -208,7 +208,7 @@ blockquote, q {
   font-size: 24px;
   font-weight: bold;
   position: relative;
-  bottom: 17px;
+  bottom: 5px;
 }
 .profile-block .profile-name span{
   font-weight: normal;
@@ -321,14 +321,31 @@ width: 100%;
 background: #7c3e77;
 }
 .profile-chat-title p{
-  display: inline-block;
-  color: white;
-  text-transform: uppercase;
-  line-height: 40px;
-  font-size: 18px;
-  font-family: 'RobotoCondensed-Regular';
-  margin-left: 10px;
-  margin-right: 20px;
+      display: inline-block;
+      float: left;
+    color: white;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'RobotoCondensed-Regular';
+    padding-left: 45px;
+    padding-right: 20px;
+    border-right: 1px solid white;
+    width: 33.3%;
+}
+
+.all-mass{
+  background: url(../img/other/mail-mass.png) no-repeat 25px 12px , #5e5a99;
+
+}
+.fav-mass{
+  background: url(../img/other/fav-mass.png) no-repeat 25px 12px;
+}
+.unread-mass{
+  background: url(../img/other/unread-mass.png) no-repeat 25px 12px,#c33b4b;
+}
+.profile-chat-title p:last-child{
+  border: 0;
 }
 .profile-chat-title p span{
   position: relative;
@@ -1289,3 +1306,172 @@ height: 760px;
   color: #6d6d6d;
   padding-left: 25px;
 }
+.status input{
+  background: #f5f5f5;
+  font-family: 'Roboto-regular';
+  color: #815e98;
+  background: #e5d5e0;width: 580px;
+  height: 35px;
+  margin-bottom: 15px;
+}
+.prof-info-block{
+  width: 590px;
+    display: inline-block;
+}
+.prof-info-block h3{
+  text-transform: uppercase;
+  color: #195d87;
+  font-family: 'RobotoCondensed-Regular';
+  line-height: 2;
+  position: relative;
+  top: 10px;
+}
+.prof-left-block{
+  float: left;
+  width: 385px;
+  clear: left;  
+}
+.prof-left-block .profile-but{
+
+  width: 385px;
+    height: 40px;
+    line-height: 42px;
+}
+.cont-profile{
+  margin-top: 25px;
+  width: 385px;
+  background: #f0f0f0;
+  height: 480px;
+}
+.cont-profile-title{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 42px;
+  color: white;
+  font-family: 'RobotoCondensed-Regular';
+  background: #83407e;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.cont-profile input{
+  color: #4b799a;
+  background: url(../img/other/zoom.png)no-repeat 96% center,#f1f1f1;
+  border: 1px solid #bacddc;
+  display: block;
+  margin:  15px auto;
+  width: 90%;
+}
+.profile-friend{
+  width: 100%;
+  height: 345px;
+  overflow-y:scroll;
+}
+.profile-friend-block{
+  height: 85px;
+  border-top: 1px solid #bacddc;
+  margin: 0 18px;
+  position: relative;
+}
+.profile-friend-block:hover{
+background: #DCD0D0;
+}
+.profile-friend-img{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.profile-friend-img img{
+  height: 100%;
+  width: 100%;
+}
+
+.profile-friend-block p{
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
+  color: #815e99;
+  font-family: 'Roboto-regular';
+  font-weight: bold;
+}
+
+.profile-friend-block span{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+    font-family: 'Roboto-regular';
+    position: absolute;
+    left: 72px;
+    top: 25px;
+}
+.prof-fr-online{
+  height: 10px;
+  width: 10px;
+  background: #56c928;
+  border-radius: 50px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.profile-friend-block b{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+    font-family: 'Roboto-regular';
+    position: absolute;
+    left: 72px;
+    top: 45px;
+    color: black;
+    opacity: 0.5;
+  }
+  .lightbox{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    display: none;
+  }
+  .del-window{
+    position: fixed;
+    top: 150px;
+    width: 600px;
+    height: 220px;
+    background: white;
+  }
+  .title-del{
+    width: 100%;
+    height: 40px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 42px;
+    background: #7c3e77;
+    text-align: center;
+    font-size: 20px;
+  }
+  .del-window p{
+    text-align: center; 
+    margin-top: 25px;
+    color: #868686;
+    margin-bottom: 25px;
+  }
+  .del-window .profile-but{
+
+    display: block;
+    margin: 0 auto;
+  }
+  .photo-akk{
+    height: 35px;
+    width: 35px;
+    position: absolute;left: 0px; top:-35px;
+  }
+
+  .photo-akk img{ 
+  height: 100%;
+  width: 100%;
+  }
